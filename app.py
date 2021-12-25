@@ -119,6 +119,7 @@ if st.button('Get Tweets') == True:
     ## text processing function
     import nltk
     nltk.download('stopwords')
+    nltk.download('vader_lexicon')
     from nltk.corpus import stopwords 
     import string
 
