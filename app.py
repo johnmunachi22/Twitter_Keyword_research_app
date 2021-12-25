@@ -117,8 +117,11 @@ if st.button('Get Tweets') == True:
     df['raw_tweet'] = df['tweet']
 
     ## text processing function
+    import nltk
+    nltk.download('stopwords')
     from nltk.corpus import stopwords 
     import string
+
 
     def text_process(mess):
         """
